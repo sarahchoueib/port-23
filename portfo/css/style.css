@@ -1,0 +1,430 @@
+/******* Généralités toutes les pages *******/
+:root {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+    color: #333;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+h2 span {
+    color: #a9d577;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+.btn {
+    text-decoration: none;
+    background-color: #fff;
+    color: #a9d577;
+    padding: .5rem 1rem;
+    border-radius: .3rem;
+    display: inline-block;
+    margin-top: 1rem;
+    transition: .3s;
+    font-weight: 700;
+}
+
+.btn:hover {
+    background-color: #a9d577;
+    color: #fff;
+}
+
+
+/******* Header *******/
+
+header {
+    display: flex;
+    border-bottom: 2px solid #333;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 8rem;
+    height: 4rem;
+    background-color: #a9d577;
+    margin-left: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+}
+
+nav a {
+    color: #a9d577;
+    text-decoration: none;
+    font-weight: 800;
+    background-color: #f2efff;
+    padding: 2rem 4rem;
+    transition: .3s;
+    display: block;
+}
+
+nav a:hover {
+    background-color: #30450d;
+    color: #fff;
+}
+
+
+a.active {
+    background-color: #a9d577;
+    color: #fff;
+}
+
+/******* Footer *******/
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #72954a;
+    border-top: 2px solid #333;
+    padding: 1rem 2rem;
+}
+
+.footer-logo {
+    width: 8rem;
+    height: 4rem;
+    background-color: #a9d577;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+}
+
+.footer-logo a {
+    text-decoration: none;
+    color: #f2efff;
+}
+
+.footer-info p {
+    font-style: italic;
+}
+
+.footer-up img {
+    width: 3rem;
+    transition: .3s;
+}
+
+.footer-up img:hover {
+    transform: scale(.8);
+}
+
+
+/*****************************/
+/********** Accueil **********/
+
+/******* Main > Banner *******/
+.banner {
+    height: 92vh;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/minecraft\ banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-title {
+    background-color: rgba(0, 0, 0, .2);
+    width: 100%;
+    text-align: center;
+    padding-top: 0rem;
+    padding-bottom: 4rem;
+    color: #fff;
+}
+
+.banner-title span {
+    font-size: 6rem;
+    color: #a9d577;
+}
+
+.banner-title h1 {
+    color: #ddd;
+}
+
+
+
+/******* Main > section-one *******/
+
+.section-one {
+    padding-top: 4rem;
+    padding-bottom: 7rem;
+}
+
+
+.section-one-flex {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.section-one article {
+    max-width: 20rem;
+    background-color: #a9d577;
+    padding: 0rem 2rem 1.5rem 2rem;
+    border-radius: .5rem;
+    box-shadow: 3px 4px 14px -2px rgba(156, 147, 147, 0.84);
+}
+
+
+/******* Main > section-two *******/
+
+.section-two {
+    background-color: #f2efff;
+    padding-top: 3rem;
+    padding-bottom: 6rem;
+}
+
+.article-bloc-image {
+    width: 50%;
+    height: 20rem;
+}
+
+.article-bloc-image img {
+    border: 1px solid #fff;
+}
+
+.article-bloc-texte {
+    width: 50%;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-two article {
+    display: flex;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+
+/******* Main > section-three *******/
+
+.section-three {
+    padding-top: 4rem;
+    padding-bottom: 7rem;
+}
+
+.section-three-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.section-three-bloc-texte {
+    text-align: center;
+}
+
+.section-three-bloc-image {
+    width: 50%;
+    height: 20rem;
+    margin-left: 2rem;
+}
+
+
+/******* Main > section-four *******/
+
+.section-four {
+    background-color: #f2efff;
+    padding-top: 3rem;
+    padding-bottom: 6rem;
+}
+
+.section-four-flex {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.section-four-image {
+    width: 10rem;
+    background-color: red;
+    height: 10rem;
+}
+
+.section-four-image img {
+    border: 1px solid #fff;
+}
+
+
+
+
+/*****************************/
+/********** Page 2 **********/
+.page2-h1 {
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 0;
+}
+
+.page2-section-one {
+    padding-top: 4rem;
+    padding-bottom: 7rem;
+}
+
+.page2-section-one-flex {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.page2-section-one article {
+    max-width: 30rem;
+    background-color: #ddd;
+    padding: 0rem 2rem 1.5rem 2rem;
+    border-radius: .5rem;
+    box-shadow: 3px 4px 14px -2px rgba(156, 147, 147, 0.84);
+}
+
+.page2-section-one article img {
+    border: 1px solid #fff;
+    margin-top: 1rem;
+}
+
+
+/*****************************/
+/********** Page 3 **********/
+.page3-h1 {
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 0;
+}
+
+.page3-section-one {
+    padding-top: 4rem;
+    padding-bottom: 7rem;
+}
+
+
+.page3-section-one-flex {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.page3-section-one article {
+    max-width: 20rem;
+    background-color: #ddd;
+    padding: 0rem 2rem 1.5rem 2rem;
+    border-radius: .5rem;
+    box-shadow: 3px 4px 14px -2px rgba(156, 147, 147, 0.84);
+}
+
+.page3-section-two {
+    background-color: #f2efff;
+    padding-top: 3rem;
+    padding-bottom: 6rem;
+}
+
+.page3-section-three {
+    padding-top: 4rem;
+    padding-bottom: 7rem;
+}
+
+
+/*****************************/
+/********** Page Contact **********/
+.contact-h1 {
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 0;
+}
+
+.contact-section-one {
+    padding-top: 4rem;
+    padding-bottom: 7rem;
+}
+
+.contact-section-one-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-section-one-bloc-texte {
+    text-align: center;
+
+}
+
+.contact-section-one-bloc-image {
+    width: 50%;
+    height: 20rem;
+}
+
+.contact-section-two {
+    background-color: #f2efff;
+    padding-top: 3rem;
+    padding-bottom: 6rem;
+}
+
+.contact-section-two-flex {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.contact-section-two-image {
+    width: 10rem;
+    height: 10rem;
+}
+
+.contact-section-two-image img {
+    border: 1px solid #fff;
+}
+
+/* Tous les articles des pages */
+.section-one article,
+.page2-section-one article,
+.page3-section-one article,
+.contact-section-one-bloc-texte,
+.contact-section-two-image {
+    background-color: #a9d577
+}
